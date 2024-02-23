@@ -1,27 +1,43 @@
-- name: index
-  url: "/"
-  method: GET
+version: 0.1
 
-- name: mainIndex
-  url: "/"
-  method: GET
+endpoints:
+  - name: "Index"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /
 
-- name: register
-  url: "/register"
-  method: POST
+  - name: "Register"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /register
+    schemaFilePath: openapi.yaml
 
-- name: login
-  url: "/login"
-  method: POST
+  - name: "Login"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /login
+    schemaFilePath: openapi.yaml
 
-- name: predictor1
-  url: "/prediction1"
-  method: POST
+  - name: "Prediction1"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /prediction1
+    schemaFilePath: openapi.yaml
 
-- name: predictor2
-  url: "/prediction2"
-  method: POST
+  - name: "Prediction2"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /prediction2
+    schemaFilePath: openapi.yaml
 
-- name: load_img
-  url: "/load_img"
-  method: GET
+  - name: "Load Image"
+    port: 5000
+    type: REST
+    networkVisibility: Public
+    context: /load_img
+    schemaFilePath: openapi.yaml
