@@ -1,0 +1,27 @@
+- name: index
+  url: "/"
+  method: GET
+
+- name: mainIndex
+  url: "/"
+  method: GET
+
+- name: register
+  url: "/register"
+  method: POST
+
+- name: login
+  url: "/login"
+  method: POST
+
+- name: predictor1
+  url: "/prediction1"
+  method: POST
+
+- name: predictor2
+  url: "/prediction2"
+  method: POST
+
+- name: load_img
+  url: "/load_img"
+  method: GET
